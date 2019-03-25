@@ -22,15 +22,15 @@ class AdminTestSuite(unittest.TestCase):
         a = dj_admins_setting.parse('"Firstname Lastname" <email@example.com>')
         assert a == [('Firstname Lastname', 'email@example.com')]
 
-        a = dj_admins_setting.parse('"Firstname Lastname" <email@example.com>, '
-                                    '"Another Name" <another@example.com')
+        a = dj_admins_setting.parse('"Firstname Lastname" <email@example.com>,'
+                                    ' "Another Name" <another@example.com')
         assert a == [
             ('Firstname Lastname', 'email@example.com'),
             ('Another Name', 'another@example.com')
         ]
 
-        a = dj_admins_setting.parse('"Firstname Lastname" <email@example.com>, '
-                               'another@example.com')
+        a = dj_admins_setting.parse('"Firstname Lastname" <email@example.com>,'
+                                    ' another@example.com')
         assert a == [
             ('Firstname Lastname', 'email@example.com'),
             ('', 'another@example.com')
@@ -41,6 +41,7 @@ class AdminTestSuite(unittest.TestCase):
             ('', 'email@example.com'),
             ('', 'another@example.com')
         ]
+
 
 if __name__ == '__main__':  # pragma: no cover
     unittest.main()

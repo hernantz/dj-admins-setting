@@ -13,7 +13,8 @@ setup(
     license='BSD',
     author='Hernan Lozano',
     author_email='hernantz@gmail.com',
-    description='Use a string to configure the admins emails setting in your Django Application.',
+    description='Use a string to configure the admins '
+                'emails setting in your Django Application.',
     long_description=long_description,
     py_modules=['dj_admins_setting'],
     zip_safe=False,
