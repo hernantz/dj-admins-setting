@@ -7,9 +7,8 @@ dj-admins-setting
 
 This utility is based on ``dj-database-url`` by Kenneth Reitz.
 
-It allows to utilize the
-`12factor <http://www.12factor.net/backing-services>`_ inspired
-environments variable to configure the admins emails list in a Django application.
+It allows to utilize the `12factor <http://www.12factor.net/backing-services>`_
+inspired environments variable to configure the `ADMINS <https://docs.djangoproject.com/en/2.2/ref/settings/#admins>`_ emails list in a Django application.
 
 
 Usage
