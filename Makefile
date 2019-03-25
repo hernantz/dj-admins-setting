@@ -5,6 +5,7 @@ test:
 	rst2html.py README.rst --halt=info >/dev/null
 
 clean:
+	find . -iname "*py[ocd]" -delete
 	rm -f README.rst.html
 	rm -f dist/*
 
